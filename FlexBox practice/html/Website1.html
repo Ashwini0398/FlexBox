@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex website1</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    
+    }
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .navigationBar {
+        background: grey;;
+        flex: 1;
+    }   
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+    }
+    .mainContentItem {
+
+        display: flex;
+        flex-direction: row;
+    }
+    .mainContentItem >article{
+        flex: 3;
+        min-height: 60vh;
+    }
+    .mainContentItem >aside{
+        background: beige;
+        flex: 1;
+    }
+    
+    header,footer{
+        padding: 60px;
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        flex-flow:column wrap;
+        background:yellowgreen ;
+        height: 20vh;
+    }
+    article,.navigationBar,aside{
+        padding: 1em;
+    }
+
+    </style>
+
+</head>
+<body>
+    <nav class="navigationBar">Nav</nav>
+    <div class="mainContent">
+        <header>Ashwini Classes</header>
+        <main class ="mainContentItem">
+            <article>
+                <h1>Article 1</h1>
+                <p>Grammarly Checks if You Are Properly Using Definite and Indefinite Articles.</p>
+                <h1>Article 2</h1>
+                <p>Grammarly Checks if You Are Properly Using Definite and Indefinite Articles.</p>
+                <h1>Article 3</h1>
+                <p>Grammarly Checks if You Are Properly Using Definite and Indefinite Articles.</p>
+                <h1>Article 4</h1>
+                <p>Grammarly Checks if You Are Properly Using Definite and Indefinite Articles.</p>
+                <h1>Article 5</h1>
+                <p>Grammarly Checks if You Are Properly Using Definite and Indefinite Articles.</p>
+                <h1>Article 6</h1>
+                <p>Grammarly Checks if You Are Properly Using Definite and Indefinite Articles.</p>
+            </article>
+            <aside>
+                <h1>Free Sessions</h1>
+                <p>For practice free sessiona are now open for all</p>
+            </aside>
+        </main>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website2</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        min-height: 100vh;
+        margin: 10px;
+        flex-direction: row;
+    }
+    .navBar{
+        background-color: gray;
+        flex:1
+    }
+    .outer-col-1{
+        display: flex;
+        flex-direction: column;
+        flex:5;
+    }
+    .inner-row{
+        display: flex;
+        flex-direction: row;   
+    }
+    .inner-col{
+        flex:4;
+    }
+    .inner-row article{
+        min-height: 60vh;
+    }
+    .inner-row aside{
+        background: beige;
+        flex:1;
+    }
+    header,footer{
+        background-color: yellowgreen;
+        height: 20vh;
+    }
+    header,footer,nav,article,aside{
+        padding: 2em;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navBar">Navigation Bar</nav>
+    <div class ="outer-col-1">
+        <header>Header</header>
+        <div class="inner-row">
+        <div class="inner-col">
+            <article>Article</article>
+            <footer>Footer</footer>
+        </div>
+        <aside>Aside</aside>
+    </div>
+    
+</body>
+</html>
